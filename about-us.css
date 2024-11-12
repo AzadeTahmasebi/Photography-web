@@ -1,0 +1,350 @@
+/*slideshow-photo*/
+div.slideshow {
+    background-image: url(img/about\ us-slideshow.jpg);
+}
+
+/*About us*/
+div.about-us {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.about-us-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px 2px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.about-us-img img {
+    width: 100%;
+    display: block;
+}
+
+div.about-us-img:hover {
+    transform: scale(95%);
+    transition: .5s;
+}
+
+div.about-us div.about-us-info {
+    width: 100%;
+    color: rgb(190, 190, 190);
+}
+
+div.about-us div.about-us-info h2 {
+    font-size: 35px;
+}
+
+div.about-us div.about-us-info span {
+    color: #EBB85E;
+}
+
+div.about-us div.about-us-info p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+div.about-us div.about-us-info div.signiture {
+    width: 40%;
+    padding-top: 30px;
+}
+
+div.about-us div.about-us-info div.signiture img {
+    width: 100%;
+}
+
+/*features*/
+div.features {
+    background-image: url(img/about\ us-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+    position: relative;
+}
+
+div.features div.feature-info {
+    width: 80%;
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    font-weight: 650;
+    text-align: justify;
+    position: absolute;
+    top: 5%;
+    right: 6%;
+}
+
+div.features div.feature-info div.feature-items div.feature-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.features div.feature-info div.feature-items div.feature-item div.feature-icon {
+    width: 10%;
+}
+
+div.features div.feature-info div.feature-items div.feature-item div.feature-icon img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+div.features div.feature-info div.feature-items div.feature-item span {
+    color: #EBB85E;
+    font-size: 50px;
+}
+
+div.features div.feature-info div.feature-items div.feature-item h3 {
+    font-size: 15px;
+}
+
+/*Facilities*/
+div.facilities div.facilities-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.facilities div.facilities-row div.facility-first {
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+div.facilities div.facilities-row div.facility-first img {
+    width: 100%;
+    display: block;
+}
+
+div.facilities div.facilities-row div.facility-second {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+div.facilities div.facilities-row div.facility-second img {
+    width: 100%;
+    display: block;
+}
+
+div.facilities div.facilities-row div.facility-first:hover {
+    visibility: hidden;
+}
+
+div.facilities div.facilities-row div.facility-first:hover div.facility-second {
+    visibility: visible;
+}
+
+div.facilities div.facilities-row div.facility-first div.facility-info {
+    width: 15%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    color: #EBB85E;
+    background-color: #070707bd;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    transition: .5s;
+}
+
+div.facilities div.facilities-row div.facility-first div.facility-info p {
+    transform: translateY(250%) rotate(-90deg);
+    letter-spacing: 1px;
+}
+
+div.facilities div.facilities-row div.facility-first:hover div.facility-info {
+    right: 0%;
+}
+
+/*Our Team*/
+div.team {
+    padding: 100px 0;
+}
+
+div.team div.title h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto 15px;
+}
+
+div.team div.title div.line {
+    width: 80px;
+    height: 5px;
+    border-top: 2px solid #EBB85E;
+}
+
+div.team div.team-row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.team div.team-row div.team-member {
+    width: 100%;
+    margin: 10px;
+    box-shadow: 0 1px 20px 2px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+
+div.team div.team-row div.team-member div.team-member-img {
+    width: 100%;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member div.team-member-img img {
+    width: 100%;
+    display: block;
+}
+
+div.team div.team-row div.team-member:hover div.team-member-img {
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member div.member-info {
+    width: 100%;
+    height: 200px;
+    color: rgb(190, 190, 190);
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member:hover div.member-info {
+    right: 0;
+}
+
+div.team div.team-row div.team-member div.member-info h3 {
+    color: #EBB85E;
+}
+
+div.team div.team-row div.team-member div.member-info div.member-social-media a {
+    padding: 0 10px;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member div.member-info div.member-social-media a:hover {
+    color: #EBB85E;
+    transition: .5s;
+}
+
+
+/*-------------Responsive----------------*/
+
+@media screen and (min-width:450px) {
+
+    div.facilities div.facilities-row div.facility-first div.facility-info p {
+        transform: translateY(420%) rotate(-90deg);
+    }
+}
+
+@media screen and (min-width:500px) {
+    div.team div.team-row div.team-member {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (min-width:550px) {
+
+    div.about-us-img {
+        width: 80%;
+        margin: auto;
+    }
+
+    div.about-us div.about-us-info div.signiture {
+        width: 30%;
+    }
+
+    div.facilities div.facilities-row div.facility-first div.facility-info p {
+        transform: translateY(450%) rotate(-90deg);
+    }
+}
+
+@media screen and (min-width:650px) {
+
+    div.about-us-img {
+        width: 60%;
+    }
+
+    div.team div.team-row div.team-member {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:750px) {
+
+    div.about-us-img {
+        width: 40%;
+        margin: 0;
+    }
+
+    div.about-us div.about-us-info {
+        width: 55%;
+    }
+
+    div.team div.title h2 {
+        font-size: 45px;
+    }
+
+    div.facilities div.facilities-row div.facility-first {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:850px) {
+
+    div.features div.feature-info {
+        width: 40%;
+    }
+
+    div.team div.team-row div.team-member {
+        width: 30%;
+    }
+
+    div.team div.team-row div.team-member div.member-info {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    div.about-us-img {
+        width: 32%;
+    }
+
+    div.features div.feature-info {
+        top: 8%;
+    }
+
+    div.facilities div.facilities-row div.facility-first div.facility-info p {
+        transform: translateY(530%) rotate(-90deg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    div.team div.team-row div.team-member div.member-info {
+        padding-top: 100px;
+    }
+}

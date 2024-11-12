@@ -1,0 +1,422 @@
+/*slideshow-photo*/
+div.slideshow {
+    background-image: url(img/slide8.jpg);
+}
+
+/*projects - portrait/ advertisement/ landscape*/
+div.project {
+    padding: 100px 0 0;
+}
+
+div.title h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto 15px;
+}
+
+div.title div.line {
+    width: 80px;
+    height: 5px;
+    border-top: 2px solid #EBB85E;
+}
+
+div.project div.project-row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.project div.project-row div.project-item {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+div.project div.project-row div.project-item div.item-info {
+    width: 1%;
+    color: rgb(190, 190, 190);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+
+div.project div.project-row div.project-item div.item-info a:hover {
+    color: #EBB85E;
+}
+
+div.project div.project-row div.project-item div.item-img a {
+    overflow: hidden;
+}
+
+div.project div.project-row div.project-item div.item-img {
+    width: 93%;
+    margin-left: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.project div.project-row div.project-item div.item-img img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: .5s;
+}
+
+div.project div.project-row div.project-item div.item-img img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: scale(1.03);
+    transition: .5s;
+}
+
+div.project div.project-row div.project-item div.item-img div.img-label {
+    width: 100%;
+    height: 50px;
+    background-color: #070707;
+    opacity: 40%;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    visibility: hidden;
+}
+
+div.project div.project-row div.project-item div.item-img:hover div.img-label {
+    visibility: visible;
+    transition: .5s;
+}
+
+div.project div.project-row div.project-item div.item-img div.lable-text h3 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #EBB85E;
+    position: absolute;
+    bottom: 3%;
+    right: -120%;
+}
+
+div.project div.project-row div.project-item div.item-img:hover div.lable-text h3 {
+    right: -50%;
+    animation: label 8s forwards linear;
+}
+
+@keyframes label {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+/*Booking*/
+div.booking {
+    background-image: url(img/slide5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    position: relative;
+    margin: 100px auto;
+}
+
+div.booking div.booking-box {
+    width: 300px;
+    height: 700px;
+    color: white;
+    border-radius: 50px;
+    padding: 20px 0 20px 50px;
+    border: 1px solid #EBB85E;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    box-shadow: 0 6px 20px 20px black;
+
+}
+
+div.booking div.booking-box h2 {
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+}
+
+div.booking div.booking-box div.line {
+    width: 86%;
+    height: 2px;
+    border-top: 2px solid rgb(190, 190, 190);
+    padding-bottom: 32px;
+    position: relative;
+}
+
+div.booking div.booking-box div.line div.line-colorful {
+    width: 20%;
+    height: 2px;
+    border-top: 2px solid #EBB85E;
+    position: absolute;
+    top: -5%;
+    left: 0;
+}
+
+.content {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 10px 20px 0;
+    color-scheme: dark;
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
+    display: block;
+}
+
+.message {
+    width: 80%;
+    height: 150px;
+    margin: 5px 10px 20px 0;
+    color: rgb(190, 190, 190);
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
+    display: block;
+}
+
+.submit {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    color: rgb(19, 19, 19);
+    border: 1px solid #EBB85E;
+    background: linear-gradient(to right, #EBB85E 0, #EBB85E 100%)left/0px 100% no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.submit:hover {
+    color: #EBB85E;
+    background: linear-gradient(to right, #EBB85E 0, #EBB85E 100%)left/0px 100% no-repeat;
+    transition: 1s;
+}
+
+/*Price*/
+div.price {
+    padding: 50px 0 100px;
+}
+
+div.price div.price-row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.price div.price-row div.price-item {
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgb(94, 93, 93);
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    margin-bottom: 50px;
+}
+
+div.price div.price-row div.price-item:hover {
+    border: 1px solid #EBB85E;
+    transition: .5s;
+}
+
+div.price div.price-row div.price-item div.price-img {
+    background-image: url(img/price.jpg);
+    background-size: cover;
+    height: 180px;
+    border-bottom: 1px solid rgb(94, 93, 93);
+    position: relative;
+}
+
+div.price div.price-row div.price-item div.price-img div.discount {
+    width: 80%;
+    background-color: #EBB85E;
+    color: #070707;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 900;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5%;
+    right: -30%;
+}
+
+div.price div.price-row div.price-item div.price-img div.discount span {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 0;
+}
+
+div.price div.price-row div.price-item div.price-img div.price-package {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+div.price div.price-row div.price-item div.price-img div.price-package h3 {
+    color: rgb(190, 190, 190);
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+div.price div.price-row div.price-item div.price-img div.price-package h4 {
+    color: #EBB85E;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+div.price div.price-row div.price-item div.price-img div.price-package span {
+    color: white;
+}
+
+div.price div.price-row div.price-item div.price-info {
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    padding: 20px;
+}
+
+div.price div.price-row div.price-item div.price-info ul {
+    padding: 0;
+}
+
+div.price div.price-row div.price-item div.price-info li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.available-facility {
+    color: #EBB85E;
+}
+
+div.price div.price-row div.price-item div.item-link {
+    width: 100%;
+    color: #070707;
+    background-color: #EBB85E;
+    border-top: 1px solid #EBB85E;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    transition: .5s;
+}
+
+div.price div.price-row div.price-item:hover div.item-link {
+    bottom: 0;
+}
+
+div.price div.price-row div.price-item div.item-link:hover {
+    color: #EBB85E;
+    background-color: #070707;
+    transition: .5s;
+}
+
+
+
+/*-------------Responsive------------------*/
+@media screen and (min-width:450px) {
+
+    div.booking div.booking-box {
+        width: 350px;
+        padding-left: 55px;
+    }
+
+    div.booking div.booking-box h2 {
+        font-size: 24px;
+    }
+
+    div.booking div.booking-box div.line div.line-colorful {
+        top: -6%;
+    }
+}
+
+@media screen and (min-width:550px) {
+
+    div.project div.project-row div.project-item {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    div.booking div.booking-box {
+        width: 480px;
+        padding-left: 75px;
+    }
+
+    div.booking div.booking-box h2 {
+        font-size: 30px;
+    }
+
+    div.booking div.booking-box div.line div.line-colorful {
+        top: -6%;
+    }
+
+    div.price div.price-row div.price-item {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+}
+
+@media screen and (min-width:650px) {
+
+    div.project div.project-row div.project-item {
+        width: 45%;
+        margin: 0 0 50px;
+    }
+}
+
+@media screen and (min-width:750px) {
+
+    div.price div.price-row div.price-item {
+        width: 45%;
+        margin: 0 0 50px;
+    }
+}
+
+@media screen and (min-width:950px) {
+
+    div.title h2 {
+        font-size: 45px;
+    }
+
+    div.project div.project-row div.project-item {
+        width: 22%;
+        margin: 0 0 50px;
+    }
+
+    div.project div.project-row div.project-item div.item-img div.lable-text h3 {
+        font-size: 20px;
+        bottom: 3%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    div.price div.price-row div.price-item {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    div.project div.project-row div.project-item div.item-img div.lable-text h3 {
+        font-size: 25px;
+        bottom: 2%;
+    }
+}

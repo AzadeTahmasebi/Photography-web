@@ -1,0 +1,916 @@
+/*Slideshow-photo*/
+div.slideshow {
+    background-image: url(img/slide1.jpg);
+}
+
+/*About us*/
+div.about-us {
+    margin: 100px auto;
+    color: rgb(190, 190, 190);
+    position: relative;
+}
+
+div.about-us-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.about-us-bio {
+    width: 100%;
+    order: 2;
+}
+
+div.title h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto 15px;
+}
+
+div.title div.line {
+    width: 80px;
+    height: 5px;
+    border-top: 2px solid #EBB85E;
+}
+
+div.about-us div.about-us-info div.about-us-bio p {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+div.link-item {
+    margin-top: 20px;
+}
+
+div.link {
+    width: 60%;
+    color: white;
+    border: 1px solid #EBB85E;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    margin: auto;
+}
+
+div.link a {
+    padding: 20px 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+div.link span {
+    padding: 13px 0 0 40px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+div.link i {
+    border: 1px solid #EBB85E;
+    background-color: #EBB85E;
+    border-radius: 50px;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+div.link div.link-percentage {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    height: 44px;
+    border-radius: 50px;
+    text-align: right;
+    background-color: #EBB85E;
+    transition: 1s
+}
+
+div.link:hover div.link-percentage {
+    width: 119%;
+}
+
+div.about-us div.about-us-img {
+    width: 100%;
+    border: 1px solid rgb(94, 93, 93);
+    transition: .5s;
+    cursor: pointer;
+    order: 1;
+    margin: 20px auto;
+}
+
+div.about-us div.about-us-img img {
+    width: 100%;
+    display: block;
+}
+
+div.about-us div.about-us-img:hover {
+    border: 1px solid #EBB85E;
+    transition: .5s;
+    transform: scale(95%);
+}
+
+/*Our Projects*/
+div.projects {
+    padding: 50px 0;
+}
+
+div.projects div.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+div.projects div.project-row div.project-item {
+    width: 100%;
+    margin: 0 auto 40px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+div.projects div.project-row div.project-item img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    display: block;
+    transition: .5s
+}
+
+div.projects div.project-row div.project-item:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.02);
+    transition: .5s
+}
+
+div.projects div.project-row div.project-item div.ptoject-item-info {
+    width: 100%;
+    background-color: #070707;
+    color: #EBB85E;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    opacity: .6;
+}
+
+div.projects div.project-row div.project-item div.ptoject-item-info h4 {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+div.projects div.project-row div.project-item div.ptoject-item-info h5 {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+div.projects div.project-row div.project-item:hover div.ptoject-item-info {
+    bottom: 0;
+    transition: .5s;
+}
+
+div.projects div.link {
+    width: 60%;
+    margin: auto;
+}
+
+/*advertising slideshow*/
+div.advertising-slideshow {
+    background-image: url(img/slide9.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.advertising-slideshow div.slideshow-text {
+    color: #EBB85E;
+    font-size: 25px;
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    left: -80%;
+    animation: advertising-slidshow-text 2s forwards linear;
+}
+
+@keyframes advertising-slidshow-text {
+    0% {
+        left: -80%;
+    }
+
+    100% {
+        left: 7%;
+    }
+}
+
+div.advertising-slideshow div.slideshow-text h3 {
+    background-image: linear-gradient(to right, rgb(190, 190, 190), #c49745, #ebae44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Our Services*/
+div.services {
+    padding: 100px 0 50px;
+}
+
+div.services div.services-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.services div.services-row div.service-item {
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+    margin-top: 30px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+
+div.services div.services-row div.service-item:hover {
+    box-shadow: 0 1px 20px 2px black;
+}
+
+div.services div.services-row div.service-item div.service-item-img {
+    width: 20%;
+}
+
+div.services div.services-row div.service-item div.service-item-img img {
+    width: 100%;
+}
+
+div.services div.services-row div.service-item h3 {
+    font-size: 24px;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+div.services div.services-row div.service-item:hover h3 {
+    color: #EBB85E;
+}
+
+div.services div.services-row div.service-item h3::after {
+    content: "";
+    width: 10%;
+    height: 2px;
+    color: rgb(190, 190, 190);
+    background-color: rgb(190, 190, 190);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+
+div.services div.services-row div.service-item:hover h3::after {
+    color: #EBB85E;
+    background-color: #EBB85E;
+    width: 80%;
+}
+
+/*Testimonials*/
+div.testimonials {
+    padding: 40px 0;
+}
+
+div.testimonials div.testimonials-row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item {
+    width: 100%;
+    padding: 30px;
+    margin: 30px auto;
+    border: 1px solid rgb(94, 93, 93);
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item:hover {
+    border: 1px solid #EBB85E;
+    transition: .5s;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item div.testimonials-img {
+    width: 40%;
+    border: 1px solid rgb(94, 93, 93);
+    padding: 3px 3px 0;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item div.testimonials-img img {
+    width: 100%;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item p {
+    color: rgb(190, 190, 190);
+    margin: 40px auto;
+}
+
+div.testimonials div.testimonials-row div.testimonials-item h5 {
+    color: #EBB85E;
+    font-size: 18px;
+}
+
+/*Our Facilities*/
+div.facilities {
+    padding: 50px 0;
+}
+
+div.facilities div.facilities-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+
+div.facilities div.facilities-row div.facilities-item {
+    width: 100%;
+    height: 500px;
+    margin: 30px auto;
+    color: rgb(190, 190, 190);
+    border: 1px solid rgb(94, 93, 93);
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+div.facilities div.facilities-row div.facilities-item div.facilities-img a {
+    overflow: hidden;
+}
+
+div.facilities div.facilities-row div.facilities-item div.facilities-img {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.facilities div.facilities-row div.facilities-item div.facilities-img img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: .5s;
+    display: block;
+}
+
+div.facilities div.facilities-row div.facilities-item:hover div.facilities-img img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+div.facilities div.facilities-row div.facilities-item div.facilities-text {
+    padding: 20px;
+}
+
+div.facilities div.facilities-row div.facilities-item div.facilities-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+div.facilities div.facilities-row div.facilities-item:hover h3 {
+    color: #EBB85E;
+    transition: .5s;
+}
+
+div.facilities div.item-link {
+    width: 100%;
+    background-color: #EBB85E;
+    color: #070707;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 12px 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    transition: .5s;
+}
+
+div.facilities div.item-link:hover {
+    background-color: #070707;
+    color: #EBB85E;
+    border-top: 1px solid rgb(94, 93, 93);
+}
+
+div.facilities div.facilities-row div.facilities-item:hover div.item-link {
+    bottom: 0;
+}
+
+/*our clients*/
+div.clients {
+    background-image: url(img/clients-bg1.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+div.clients div.clients-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+
+div.clients div.client-img {
+    width: 15%;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: .5s;
+}
+
+div.clients div.client-img img {
+    width: 100%;
+    transition: .5s;
+}
+
+div.clients div.client-img:hover {
+    filter: grayscale(0);
+}
+
+/*Our Team*/
+div.team {
+    padding: 100px 0 50px;
+}
+
+div.team div.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+div.team div.team-row div.team-member {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member img {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member:hover img {
+    transform: scale(1.06);
+    filter: brightness(.6);
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member div.member-info {
+    width: 100%;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    transition: .5s;
+}
+
+div.team div.team-row div.team-member:hover div.member-info {
+    bottom: 0;
+}
+
+div.team div.team-row div.team-member div.member-info h3 {
+    color: #EBB85E;
+}
+
+div.team div.team-row div.team-member div.member-info div.member-social-media a {
+    padding: 0 10px;
+}
+
+div.team div.team-row div.team-member div.member-info div.member-social-media a:hover {
+    color: #EBB85E;
+}
+
+/*Blog*/
+div.blog {
+    padding-bottom: 100px;
+}
+
+div.blog div.blog-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+div.blog div.blog-row div.blog-item {
+    width: 100%;
+    margin: 0 auto 80px;
+    color: rgb(190, 190, 190);
+}
+
+div.blog div.blog-row div.blog-item h3 {
+    margin-bottom: 0;
+}
+
+div.blog div.blog-row div.blog-item:hover h3 {
+    color: #EBB85E;
+    transition: .5s;
+}
+
+div.blog div.blog-row div.blog-item div.blog-img {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.blog div.blog-row div.blog-item div.blog-img a {
+    overflow: hidden;
+}
+
+div.blog div.blog-row div.blog-item div.blog-img img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: .5s;
+}
+
+div.blog div.blog-row div.blog-item:hover div.blog-img img {
+    transform: scale(1.06);
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transition: .5s;
+}
+
+
+/*-----------Responsive----------------*/
+
+@media screen and (min-width:470px) {
+    div.facilities div.facilities-row div.facilities-item {
+        height: 550px;
+    }
+}
+
+@media screen and (min-width:500px) {
+
+    div.link a {
+        padding: 20px 40px;
+    }
+
+    div.projects div.project-row div.project-item {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:560px) {
+    div.link {
+        width: 50%;
+    }
+
+    div.link a {
+        padding: 20px 40px;
+    }
+
+    div.about-us div.about-us-img {
+        width: 80%;
+    }
+
+    div.projects div.link {
+        width: 50%;
+    }
+
+    div.projects div.link a {
+        padding-left: 40px;
+    }
+
+    div.testimonials div.testimonials-row div.testimonials-item {
+        width: 80%;
+        text-align: center;
+    }
+
+    div.facilities div.facilities-row div.facilities-item {
+        width: 80%;
+    }
+
+    div.team div.team-row div.team-member {
+        width: 80%;
+    }
+
+    div.blog div.blog-row div.blog-item {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:650px) {
+    div.services div.services-row div.service-item {
+        width: 49%;
+    }
+
+    div.services div.services-row div.service-item div.service-item-img {
+        width: 25%;
+    }
+
+    div.team div.team-row div.team-member {
+        width: 45%;
+        margin: 30px 0 0;
+    }
+}
+
+@media screen and (min-width:700px) {
+
+    div.about-us-bio {
+        width: 50%;
+        order: 1;
+    }
+
+    div.title h2 {
+        font-size: 45px;
+    }
+
+    div.link {
+        width: 70%;
+        margin: 0;
+    }
+
+    div.link a {
+        padding: 20px 10px;
+    }
+
+    div.about-us div.about-us-img {
+        width: 40%;
+        margin: 0;
+    }
+
+    div.projects div.project-row div.project-item {
+        width: 30%;
+        margin: 0;
+    }
+
+    div.projects div.project-row div.project-item div.ptoject-item-info h4 {
+        font-size: 14px;
+    }
+
+    div.projects div.project-row div.project-item div.ptoject-item-info h5 {
+        font-size: 12px;
+    }
+
+    div.projects div.link {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:750px) {
+    div.projects div.link {
+        width: 35%;
+    }
+
+    div.projects div.link-item {
+        margin-top: 0;
+    }
+
+    div.projects div.link a {
+        padding-left: 20px;
+    }
+
+    div.facilities div.facilities-row div.facilities-item {
+        height: 600px;
+    }
+
+    div.clients {
+        height: 300px;
+    }
+
+    div.clients div.clients-row {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (min-width:850px) {
+
+    div.link a {
+        padding: 20px 35px;
+    }
+
+    div.link-item {
+        margin-top: 90px;
+    }
+
+    div.projects div.link {
+        width: 30%;
+    }
+
+    div.projects div.link a {
+        padding-left: 25px;
+    }
+
+    div.advertising-slideshow div.slideshow-text {
+        font-size: 30px;
+    }
+
+    div.advertising-slideshow {
+        height: 400px
+    }
+
+    div.testimonials div.testimonials-row div.testimonials-item {
+        width: 30%;
+        height: 350px;
+        text-align: center;
+    }
+
+    div.facilities div.facilities-row div.facilities-item {
+        width: 30%;
+        height: 450px;
+        margin: 0;
+    }
+
+    div.facilities div.facilities-row div.facilities-item div.facilities-text h3 {
+        font-size: 16px;
+    }
+
+    div.blog div.blog-row div.blog-item {
+        width: 30%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:950px) {
+
+    div.link-item {
+        margin-top: 90px;
+    }
+
+    div.link a {
+        padding: 20px 40px;
+    }
+
+    div.projects div.link a {
+        padding-left: 30px;
+    }
+
+    div.advertising-slideshow {
+        height: 500px
+    }
+
+    div.advertising-slideshow div.slideshow-text {
+        font-size: 35px;
+    }
+
+    div.services div.services-row div.service-item {
+        width: 30%;
+    }
+
+    div.services div.services-row div.service-item div.service-item-img {
+        width: 25%;
+    }
+
+    div.facilities div.facilities-row div.facilities-item {
+        height: 490px;
+    }
+
+    div.facilities div.facilities-row div.facilities-item div.facilities-text h3 {
+        font-size: 18px;
+    }
+
+    div.clients div.clients-row {
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    div.clients div.client-img {
+        width: 16%;
+        padding: 0 30px
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    div.title h2 {
+        font-size: 50px;
+    }
+
+    div.link {
+        width: 60%;
+    }
+
+    div.about-us div.about-us-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    div.projects div.project-row div.project-item div.ptoject-item-info h4 {
+        font-size: 18px;
+    }
+
+    div.projects div.project-row div.project-item div.ptoject-item-info h5 {
+        font-size: 14px;
+    }
+
+    div.projects div.link a {
+        padding-left: 35px;
+    }
+
+    div.advertising-slideshow {
+        height: 600px
+    }
+
+    div.clients {
+        margin-top: 30px;
+    }
+
+    div.team div.team-row div.team-member {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    div.link a {
+        padding: 20px 50px;
+    }
+
+    div.projects div.link {
+        width: 30%;
+    }
+
+    div.projects div.link a {
+        padding-left: 50px;
+    }
+
+    div.advertising-slideshow div.slideshow-text {
+        font-size: 40px;
+    }
+
+    div.facilities div.facilities-row div.facilities-item div.facilities-text h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    div.about-us-bio {
+        width: 45%;
+    }
+
+    div.link {
+        width: 50%;
+    }
+
+    div.link a {
+        padding: 20px;
+    }
+
+    div.projects div.project-row div.project-item div.ptoject-item-info h4 {
+        font-size: 20px;
+    }
+
+    div.projects div.link {
+        width: 25%;
+    }
+
+    div.projects div.link a {
+        padding-left: 40px;
+    }
+
+    div.facilities div.facilities-row div.facilities-item {
+        height: 510px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+
+    div.link a {
+        padding: 20px 30px;
+    }
+
+    div.projects div.link a {
+        padding-left: 45px;
+    }
+}
